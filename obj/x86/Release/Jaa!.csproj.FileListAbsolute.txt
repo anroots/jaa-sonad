@@ -1,0 +1,15 @@
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\bin\Release\Jaa!.exe
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\bin\Release\Jaa!.pdb
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\Help.baml
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\MainWindow.baml
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\Help.g.cs
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\MainWindow.g.cs
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\App.g.cs
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\Jaa!_MarkupCompile.cache
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\Jaa!.g.resources
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\Jaa_.Properties.Resources.resources
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\Jaa!.exe
+C:\Users\david\Documents\Visual Studio 2010\Projects\Jaa!\obj\x86\Release\Jaa!.pdb
