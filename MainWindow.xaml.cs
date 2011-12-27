@@ -25,6 +25,7 @@ namespace Jaa_
         /// </summary>
         private Random _random;
 
+        public static MainWindow instance;
 
         /// <summary>
         /// Whether to use the time limit
@@ -63,6 +64,12 @@ namespace Jaa_
         private int points = 0;
 
         /// <summary>
+        /// The keyboard key that acts as the "Next word" command
+        /// Beware of specailly handled keys such as SPACE or PERIOD
+        /// </summary>
+        Key enterKey = Key.Enter;
+
+        /// <summary>
         /// Global multiplier for points calculation formula
         /// </summary>
         private const double pointsMultiplier = 4.2;
@@ -78,6 +85,7 @@ namespace Jaa_
             lblTimeLeft.DataContext = game;
             _random = new Random(22);
             Reset();
+            instance = this;
            }
 
         /// <summary>
@@ -137,7 +145,7 @@ namespace Jaa_
             }
 
             // Enter / space pressed
-            if (e.Key.Equals(Key.Enter))
+            if (e.Key.Equals(enterKey))
             {
                 SaveHistory();
                 AddPoints();
@@ -218,6 +226,7 @@ namespace Jaa_
             letter.Content = nextLetter;
             entry.Text = nextLetter;
             entry.Focus();
+            entry.CaretIndex = entry.Text.Length;
         }
 
         /// <summary>
@@ -273,6 +282,7 @@ namespace Jaa_
             timeLimit = true;
             lblTimeLeft.Visibility = Visibility.Visible;
             label1.Visibility = Visibility.Visible;
+            lblTimeLeft.Content = Game.initialTime.ToString();
         }
 
         /// <summary>
@@ -317,6 +327,21 @@ namespace Jaa_
             Reset();
         }
 
-      
+        /// <summary>
+        /// Update time left label on timer tick. Who needs databinding anyway?
+        /// </summary>
+        public void UpdateTimeLeft()
+        {
+            lblTimeLeft.Content = game.timeLeft.ToString();
+        }
+
+        /// <summary>
+        /// Time ran out - game over!
+        /// </summary>
+        public void TimeRanOut()
+        {
+            entry.IsEnabled = false;
+            MessageBox.Show("Aeg otsas! Mängisid "+game.gameDuration+" sekundit ja teenisid "+points+" punkti. Arvatud sai "+wordCount+" sõna, keskmiselt "+(int)points/wordCount+" punkti ja "+(int)game.gameDuration/wordCount+" sekundit sõna kohta.");
+        }
     }
 }

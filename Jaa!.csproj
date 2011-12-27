@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>window.ico</ApplicationIcon>
+    <ApplicationIcon>Jaa_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -105,16 +105,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <SplashScreen Include="Images\Jaa.PNG" />
+    <Resource Include="Images\Jaa_icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Jaa_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="window.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Jaa_help.PNG" />
+    <Resource Include="Jaa_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

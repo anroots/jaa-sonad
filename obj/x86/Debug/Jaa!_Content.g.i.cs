@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/jaa_help.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("jaa_icon.ico")]
 
 

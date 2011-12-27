@@ -59,8 +59,6 @@ namespace Jaa_ {
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public static void Main() {
-            SplashScreen splashScreen = new SplashScreen("images/jaa.png");
-            splashScreen.Show(true);
             Jaa_.App app = new Jaa_.App();
             app.InitializeComponent();
             app.Run();
